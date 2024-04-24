@@ -1,0 +1,30 @@
+name: Add Modified Date
+version: 1.0.0
+description: Automatically adds modfied date to when save a page via Grav Admin plugin
+icon: clock-o
+author:
+  name: Utano Schell
+  email: utano@mayonakanouta.com
+  url: http://www.utanomayonaka.com
+homepage: http://www.utanomayonaka.com
+keywords: plugin, auto-date, date, modified
+bugs: http://www.utanomayonaka.com
+docs: http://www.utanomayonaka.com
+license: MIT
+
+dependencies:
+    - { name: admin, version: '>=1.2.3' }
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
