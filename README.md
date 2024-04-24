@@ -13,3 +13,15 @@ To install this plugin, just download the zip version of this repository and unz
 You should now have all the plugin files under
 
 /your/site/grav/user/plugins/add-modified
+
+## Usage
+
+You need to change code the template file of the theme you are using as necessary.
+
+For example, as below
+
+```twig
+   ...
+    <p>Last edited: <span>{{ page.modified|date(config.system.pages.dateformat.default) }}</span></p>
+   ...
+```
